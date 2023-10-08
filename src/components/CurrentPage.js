@@ -3,30 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
+import Catering from './pages/Catering';
+import Contact from './pages/Contact';
+import Menu from './pages/Menu';
 
 function CurrentPage() {
-    // const [currentPage, setCurrentPage] = useState('Home');
-
-    // const renderPage = () => {
-    //     if (currentPage === 'Home') {
-    //         return <Home />;
-    //     }
-    //     if (currentPage === 'About') {
-    //         return <About />;
-    //     }
-    //     // if (currentPage === 'Menu') {
-    //     //     return <Menu />;
-    //     // }
-    // };
-
-    // const handlePageChange = (page) => setCurrentPage(page);
-
-    // return (
-    //     <div >
-    //         <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-    //         {renderPage()}
-    //     </div>
-    // );
     return (
         <Router>
             <div>
@@ -34,6 +15,9 @@ function CurrentPage() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/catering" element={<Catering />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/menu" element={<Menu />} />
                 </Routes>
             </div>
         </Router>
