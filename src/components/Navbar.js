@@ -36,7 +36,7 @@ function Navbar({ currentPage, handlePageChange }) {
                 </div>
             ) : (
                 <div className='flex justify-between p-3 animate__animated animate__fadeInDown'>
-                    <img src={forettisLogo} className='h-12'></img>
+                    <Link to='/'><img src={forettisLogo} className='h-12'></img></Link>
                     <ul className='flex items-center xs:hidden lg:flex'>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
