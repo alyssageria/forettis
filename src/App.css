@@ -8,9 +8,18 @@
     font-family: 'Nexa', sans-serif;
 }
 
+/* home styles */
 .home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/forettis-restaurant.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/multidish-pic.avif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.pizzaImage {
+    border-radius: 10% 20%;
+}
+
+.restaurantImage {
+    border-radius: 20% 10%;
 }
