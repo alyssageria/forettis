@@ -22,16 +22,48 @@ function Navbar({ currentPage }) {
                             <button className='text-4xl text-red p-2' onClick={toggleMenu}>☰</button>
                         </div>
                     </div>
-                    <div className='h-[90vh] animate__animated animate__fadeInDown flex items-center justify-center'>
+                    <div className='h-[80vh] animate__animated animate__fadeInDown flex items-center justify-center'>
                         <ul className='text-center text-2xl'>
-                            <li className='p-2'>Home</li>
-                            <li className='p-2'>About</li>
-                            <li className='p-2'>Menu</li>
-                            <li className='p-2'>Reservations</li>
-                            <li className='p-2'>Catering</li>
-                            <li className='p-2'>Contact</li>
-                            <li className='p-2'>Order Now</li>
+                            <li className='p-2'><Link
+                                to='/'
+                                // onClick={() => handlePageChange('Home')}
+                                className={currentPage === 'Home' ? 'active' : ''}
+                            >Home</Link></li>
+                            <li className='p-2'><Link
+                                to='/about'
+                                // onClick={() => handlePageChange('About')}
+                                className={currentPage === 'About' ? 'active' : ''}
+                            >About</Link></li>
+                            <li className='p-2'><Link
+                                to='/menu'
+                                // onClick={() => handlePageChange('Menu')}
+                                className={currentPage === 'Menu' ? 'active' : ''}
+                            >Menu</Link></li>
+                            <li className='p-2'><a
+                                href='https://www.opentable.com/r/forettis-corona-del-mar'
+                                // onClick={() => handlePageChange('Reservations')}
+                                className={currentPage === 'Reservations' ? 'active' : ''}
+                            >Reservations</a></li>
+                            <li className='p-2'><Link
+                                to='/catering'
+                                // onClick={() => handlePageChange('Catering')}
+                                className={currentPage === 'Catering' ? 'active' : ''}
+                            >Catering</Link></li>
+                            <li className='p-2'><Link
+                                to='/contact'
+                                // onClick={() => handlePageChange('Contact')}
+                                className={currentPage === 'Contact' ? 'active' : ''}
+                            >Contact</Link></li>
+                            <li className='p-2'><a
+                                href='https://www.chownow.com/order/29889/locations/44236?utm_source=google&utm_medium=organic&utm_campaign=place_action'
+                                // onClick={() => handlePageChange('Order')}
+                                className={currentPage === 'Order' ? 'active' : ''}
+                            >Order Now</a></li>
                         </ul>
+                    </div>
+                    <div className='flex items-center justify-center pb-7'>
+                        <a href='https://www.instagram.com/forettis_/'><img src={instagramIcon} className='h-9 px-3'></img></a>
+                        <a href='https://www.yelp.com/biz/forettis-corona-del-mar-2'><img src={yelpIcon} className='h-9 px-3'></img></a>
                     </div>
                 </div>
             ) : (
