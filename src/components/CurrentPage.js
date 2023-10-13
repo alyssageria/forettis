@@ -6,6 +6,7 @@ import About from './pages/About';
 import Catering from './pages/Catering';
 import Contact from './pages/Contact';
 import Menu from './pages/Menu';
+import Footer from './Footer';
 
 function CurrentPage() {
     return (
@@ -19,6 +20,7 @@ function CurrentPage() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/menu" element={<Menu />} />
                 </Routes>
+                <Footer />
             </div>
         </Router>
     );
