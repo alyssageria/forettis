@@ -8,6 +8,12 @@
     font-family: 'Nexa', sans-serif;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 /* home styles */
 .home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/multidish-pic.avif');

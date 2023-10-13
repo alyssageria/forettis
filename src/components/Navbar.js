@@ -5,7 +5,7 @@ import instagramIcon from '../images/instagram-icon.png';
 import yelpIcon from '../images/yelp-icon.png';
 import 'animate.css';
 
-function Navbar({ currentPage }) {
+function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -13,7 +13,7 @@ function Navbar({ currentPage }) {
     }
 
     return (
-        <div>
+        <div className='navbar bg-white'>
             {isMenuOpen ? (
                 <div>
                     <div>
@@ -26,38 +26,24 @@ function Navbar({ currentPage }) {
                         <ul className='text-center text-2xl'>
                             <li className='p-2'><Link
                                 to='/'
-                                // onClick={() => handlePageChange('Home')}
-                                className={currentPage === 'Home' ? 'active' : ''}
                             >Home</Link></li>
                             <li className='p-2'><Link
                                 to='/about'
-                                // onClick={() => handlePageChange('About')}
-                                className={currentPage === 'About' ? 'active' : ''}
                             >About</Link></li>
                             <li className='p-2'><Link
                                 to='/menu'
-                                // onClick={() => handlePageChange('Menu')}
-                                className={currentPage === 'Menu' ? 'active' : ''}
                             >Menu</Link></li>
                             <li className='p-2'><a
                                 href='https://www.opentable.com/r/forettis-corona-del-mar'
-                                // onClick={() => handlePageChange('Reservations')}
-                                className={currentPage === 'Reservations' ? 'active' : ''}
                             >Reservations</a></li>
                             <li className='p-2'><Link
                                 to='/catering'
-                                // onClick={() => handlePageChange('Catering')}
-                                className={currentPage === 'Catering' ? 'active' : ''}
                             >Catering</Link></li>
                             <li className='p-2'><Link
                                 to='/contact'
-                                // onClick={() => handlePageChange('Contact')}
-                                className={currentPage === 'Contact' ? 'active' : ''}
                             >Contact</Link></li>
                             <li className='p-2'><a
                                 href='https://www.chownow.com/order/29889/locations/44236?utm_source=google&utm_medium=organic&utm_campaign=place_action'
-                                // onClick={() => handlePageChange('Order')}
-                                className={currentPage === 'Order' ? 'active' : ''}
                             >Order Now</a></li>
                         </ul>
                     </div>
@@ -73,50 +59,36 @@ function Navbar({ currentPage }) {
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
                                 to='/'
-                                // onClick={() => handlePageChange('Home')}
-                                className={currentPage === 'Home' ? 'active' : ''}
                             >Home</Link>
                         </li>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
                                 to='/about'
-                                // onClick={() => handlePageChange('About')}
-                                className={currentPage === 'About' ? 'active' : ''}
                             >About</Link>
                         </li>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
                                 to='/menu'
-                                // onClick={() => handlePageChange('Menu')}
-                                className={currentPage === 'Menu' ? 'active' : ''}
                             >Menu</Link>
                         </li>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <a
                                 href='https://www.opentable.com/r/forettis-corona-del-mar'
-                                // onClick={() => handlePageChange('Reservations')}
-                                className={currentPage === 'Reservations' ? 'active' : ''}
                             >Reservations</a>
                         </li>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
                                 to='/catering'
-                                // onClick={() => handlePageChange('Catering')}
-                                className={currentPage === 'Catering' ? 'active' : ''}
                             >Catering</Link>
                         </li>
                         <li className='p-2 text-xl hover:text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <Link
                                 to='/contact'
-                                // onClick={() => handlePageChange('Contact')}
-                                className={currentPage === 'Contact' ? 'active' : ''}
                             >Contact</Link>
                         </li>
                         <li className='p-2 text-xl text-red hover:text-2xl delay-150 transition-all duration-200 ease-in-out'>
                             <a
                                 href='https://www.chownow.com/order/29889/locations/44236?utm_source=google&utm_medium=organic&utm_campaign=place_action'
-                                // onClick={() => handlePageChange('Order')}
-                                className={currentPage === 'Order' ? 'active' : ''}
                             >Order Now</a>
                         </li>
                     </ul>
