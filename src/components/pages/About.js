@@ -22,6 +22,9 @@ function About() {
                         We also feature house made pastas and favorite dishes from across Italy, expertly paired with craft cocktails and a curated selection of Italian and California Wines; several from Orange County wine owners.</p>
                 </div>
             </div>
+            {/* <div className='about-hero'>
+
+            </div> */}
             <div className='flex items-center bg-red min-h-[60vh] animate__animated animate__fadeInUp'>
                 <div className='w-2/3 m-4'>
                     <h2 className='text-white text-7xl font-bold p-6'>NEW NAME,</h2>

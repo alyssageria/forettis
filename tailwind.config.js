@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         'red': '#D21F25',
-        'dark': '#292524'
+        'dark': '#292524',
+        'white': '#fff'
       }
     },
     screens: {
