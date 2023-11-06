@@ -36,23 +36,18 @@
 }
 
 /* about styles */
-.ownersImage {
-    border-radius: 10% 20%;
+/* .ownersImage {
+    border-radius: 5%;
 }
 
 .tridish {
     border-radius: 20% 10%;
-}
+} */
 
 /* .about-hero {
     background-image: url('./images/salisiccia-pizza.webp');
-    display: flex;
-    flex-direction: column;
-    min-height: 60vh;
-    align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
+    background-position: center;
+    min-height: 70vh;
 } */
