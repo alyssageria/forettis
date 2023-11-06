@@ -12,18 +12,17 @@ function About() {
                 <hr className='border-solid border-2 border-red m-3'></hr>
             </div>
             <div className='flex items-center min-h-[70vh] m-10 animate__animated animate__fadeInDown'>
+                <div className='flex justify-center w-1/2 '>
+                    <img src={ownersImage} className='ownersImage h-[25rem] w-[42rem] rounded-xl'></img>
+                </div>
                 <div className='w-1/2 m-4 flex flex-col'>
                     <h2 className='text-red font-bold italic text-5xl p-2'>Bringing Centuries of Italian Tradition to Corona del Mar</h2>
-                    <p className='text-xl'>Foretti's CDM established itself as a highlight of the Newport Beach dining scene when it opened in 2013. Operating under the new ownership of longtime Restaurateur and Level 1 Sommelier Thaddeus Foret, we continue to prepare our signature recipes, created by the restaurant's namesake chef and his culinary team—many of whom remain in our kitchen today.
+                    <p className='text-xl text-right'>Foretti's CDM established itself as a highlight of the Newport Beach dining scene when it opened in 2013. Operating under the new ownership of longtime Restaurateur and Level 1 Sommelier Thaddeus Foret, we continue to prepare our signature recipes, created by the restaurant's namesake chef and his culinary team—many of whom remain in our kitchen today.
 
                         Foretti's is a celebration of Italian traditions, specializing in authentic Associazione Verace Pizza Napoletana-certified wood-fired pizzas baked in a 900 degree oven with the same techniques and ingredients used in Naples, Italy.
 
                         We also feature house made pastas and favorite dishes from across Italy, expertly paired with craft cocktails and a curated selection of Italian and California Wines; several from Orange County wine owners.</p>
                 </div>
-                <div className='flex justify-center w-1/2 '>
-                    <img src={ownersImage} className='ownersImage h-[25rem] w-[42rem] rounded-xl'></img>
-                </div>
-
             </div>
             {/* <div className='about-hero'>
 
