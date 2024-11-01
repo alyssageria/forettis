@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FoodMenu from './FoodMenu';
+import DrinkMenu from './DrinkMenu';
 
 function Menu() {
     const [activeMenu, setActiveMenu] = useState('MENU');
@@ -42,16 +43,6 @@ function Menu() {
                 {activeMenu === 'DRINKS' && <DrinkMenu />}
                 {activeMenu === 'CATERING' && <CateringMenu />}
             </div>
-        </div>
-    )
-}
-
-
-
-function DrinkMenu() {
-    return (
-        <div>
-            <h1>drinks</h1>
         </div>
     )
 }
