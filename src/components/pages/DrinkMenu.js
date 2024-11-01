@@ -98,6 +98,58 @@ function DrinkMenu() {
         },
     ]
 
+    const interestingWhites = [
+        {
+            id: 1,
+            whitesRose: 'Il Nido',
+            description: 'Pinot Grigio',
+            notes: 'Lime, Pears, Nectarine',
+            price: 'Glass $13 | Bottle $52'
+        },
+        {
+            id: 2,
+            whitesRose: 'Graypez',
+            description: 'Rose of Pinot Noir, Sonoma, 2020',
+            notes: 'Strawberry, White Peach, Hibiscus',
+            price: 'Glass $15 | Bottle $60'
+        },
+        {
+            id: 3,
+            whitesRose: 'Matua',
+            description: 'Sauvignon Blanc, Marlborough, 2021',
+            notes: 'Citrus, Grapefruit, Bracing',
+            price: 'Glass $15 | Bottle $60'
+        },
+        {
+            id: 4,
+            whitesRose: 'The Setting',
+            description: 'Sauvignon Blanc, Napa, 2019',
+            notes: 'Crushed Grapefruit, Lemon, Vanilla',
+            price: 'Glass $20 | Bottle $80'
+        },
+        {
+            id: 5,
+            whitesRose: 'Sandro de Bruno',
+            description: 'Soave Colli Scaligeri, Veneto, 2019',
+            notes: 'Yellow Pear, Golden Apple, Wet Stone',
+            price: 'Glass $14 | Bottle $52'
+        },
+        {
+            id: 6,
+            whitesRose: 'Soma Cellars',
+            description: 'Viognier, Russian River, 2019',
+            notes: 'Flowers, Lychee, Peaches',
+            price: 'Glass $15 | Bottle $42'
+        },
+        {
+            id: 7,
+            whitesRose: 'Giuseppe Roagna',
+            description: 'Roero Arneis, Piedmont, 2020',
+            notes: 'White Peach, Lemon, Citrus',
+            price: 'Glass $18 | Bottle $72'
+        },
+    ]
+
     return (
         <div className="w-full flex flex-col items-center">
             <div className='border-solid border-2 border-red xs:w-auto md:w-[80%] m-10'>
@@ -136,6 +188,20 @@ function DrinkMenu() {
                                     </div>
                                     <p className="text-lg">{sparkling.description}</p>
                                     <p className="text-lg italic font-bold">{sparkling.price}</p>
+                                </div>
+                            )
+                        })}
+                    </div>
+                    <h3 className="text-3xl italic font-bold text-red m-10 text-center">Interesting Whites & Rose</h3>
+                    <div className='per-la-tavola grid grid-rows-4 grid-flow-col col-start-auto col-end-auto gap-12 m-10'>
+                        {interestingWhites.map(whitesRose => {
+                            return (
+                                <div key={whitesRose.id} className='flex flex-col items-center'>
+                                    <div div className='flex justify-between font-bold italic'>
+                                        <h2 className="text-lg">{whitesRose.whitesRose}</h2>
+                                    </div>
+                                    <p className="text-lg">{whitesRose.description}</p>
+                                    <p className="text-lg italic font-bold">{whitesRose.price}</p>
                                 </div>
                             )
                         })}
